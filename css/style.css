@@ -1,3 +1,9 @@
 #motal_wrapper{
     background-color: #333;
 }
+.close{
+    display: none;
+}
+.list_content{
+    background-color: #ddd;
+}

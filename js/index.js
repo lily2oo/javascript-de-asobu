@@ -1,15 +1,14 @@
 const button = document.getElementById("addBtn");
-const lists = document.getElementById("list_wrapper");
-const list_content = document.getElementsByClassName("list_content");
 let loadedList = 3;
 
-// async await
+// get event.json
 async function getEvents() {
     const res = await fetch("../event.json");
     const events = await res.json();
     return events;
 }
 
+// get next.json
 async function getNext() {
     const res = await fetch("../next.json");
     const nexts = await res.json();
@@ -17,36 +16,69 @@ async function getNext() {
 }
 
 // make list
-function addList(event) {
+function makeList(event) {
+    const lists = document.getElementById("list_wrapper");
     const list = document.createElement("li");
     list.setAttribute("class", "list_content");
-    // list.innerHTML = `<h3 class="date">${event.date}</h3><p class="class">${event.class}</p><p class="text">${event.text}</p><p class="update">${event.update}</p>`;
     list.innerHTML = `<h3 class="date">${event.date}</h3><p class="class">${event.class}</p><p class="text">${event.text}</p><p class="update">${event.update}</p>`;
     lists.appendChild(list);
 };
 
-// index
-async function loadEvents() {
-    const events = await getEvents();
-    const nexts = await getNext();
-    for (let i = 0; i < loadedList; i++) {
-        const event = events[i];
-        addList(event);
-    }
-    console.log("loadEvent");
-    getId(events, nexts);
+// upload to next.json
+function sendPage(i, events, nexts) {
+    const event = events[i];
+    const next = nexts[0];
+    const content = document.createElement("li");
+    content.innerHTML = `<p>${event.date}</p><p>successed</p>`;
+    next.html = content;
+    console.log(event);
+    console.log(next.html);
 }
 
-// upload
+// getID
+function getId(events, nexts) {
+    const page_true = document.getElementById("page_true");
+    const list_content = document.getElementsByClassName("list_content");
+    for (let i = 0; i < list_content.length; i++) {
+        list_content[i].addEventListener("click", function () {
+            console.log(i);
+            sendPage(i, events, nexts);
+            setTimeout(jumpPage, 500);
+        });
+    };
+};
+
+// index
+async function loadEvents() {
+    const lists = document.getElementById("list_wrapper");
+    const events = await getEvents();
+    const nexts = await getNext();
+    for (let i = 0; i < Object.keys(events).length; i++) {
+        const event = events[i];
+        makeList(event);
+        if (i > 2) {
+            lists.children[i].classList.add("close");
+        }
+    }
+    console.log("get ready getIdevent");
+    lists.addEventListener("click", getId(events, nexts));
+}
+
+
+function jumpPage() {
+    window.location.href = '../next.html';
+}
+
+// upload by push button
 async function listEvents() {
+    const lists = document.getElementById("list_wrapper");
     const delta = 3;
     const events = await getEvents();
     if (loadedList <= Object.keys(events).length - 1) {
         // plus
         for (let i = loadedList; i < loadedList + delta; i++) {
             if (i <= Object.keys(events).length - 1) {
-                const event = events[i];
-                addList(event);
+                lists.children[i].classList.remove("close");
             }
         };
         loadedList += delta;
@@ -59,52 +91,10 @@ async function listEvents() {
                 lists.children[i].classList.add("close");
             }
         };
-        let closes = document.querySelectorAll('.close');
-        for (const close of closes) {
-            close.remove();
-        }
         loadedList = 3;
         button.innerText = "MORE";
     }
 }
-
-// getID
-function getId(events, nexts) {
-    console.log("getID");
-    for (let i = 0; i < list_content.length; i++) {
-        list_content[i].addEventListener("click", function () {
-            const page_true = document.getElementById("page_true");
-            if (page_true !== null) {
-                page_true.removeAttribute("id");
-            }
-            list_content[i].setAttribute("id", "page_true");
-            console.log(i);
-            sendPage(i, events, nexts);
-            setTimeout(jumpPage, 500);
-        });
-    };
-};
-
-function jumpPage() {
-    window.location.href = '../next.html';
-}
-
-function sendPage(i, events, nexts) {
-    const event = events[i];
-    const next = nexts[0];
-    console.log(event);
-    // const event = events[id];
-    const content = document.createElement("li");
-    content.innerHTML = `<p>${event.date}</p><p>successed</p>`;
-    // list.innerHTML = `<a href="next.html"><h3 class="date">${event.date}</h3><p class="class">${event.class}</p><p class="text">${event.text}</p><p class="update">${event.update}</p></a>`;
-    next.html = content;
-    console.log(next.html);
-}
-
-window.globalFunction = {};
-window.globalFunction.send = sendPage;
-
-
 
 window.addEventListener("load", loadEvents);
 button.addEventListener("click", listEvents);
