@@ -8,42 +8,34 @@ async function getEvents() {
     return events;
 }
 
-// get next.json
-async function getNext() {
-    const res = await fetch("../next.json");
-    const nexts = await res.json();
-    return nexts;
-}
-
 // make list
 function makeList(event) {
     const lists = document.getElementById("list_wrapper");
     const list = document.createElement("li");
     list.setAttribute("class", "list_content");
-    list.innerHTML = `<h3 class="date">${event.date}</h3><p class="class">${event.class}</p><p class="text">${event.text}</p><p class="update">${event.update}</p>`;
+    if (event.genre === "イベント情報") {
+        list.innerHTML = `<p class="genre genre_event">${event.genre}</p><p class="title">${event.title}</p><p class="date">${event.date}</p>`;
+    }
+    if (event.genre === "お知らせ") {
+        list.innerHTML = `<p class="genre genre_notice">${event.genre}</p><p class="title">${event.title}</p><p class="date">${event.date}</p>`;
+    }
     lists.appendChild(list);
 };
 
-// upload to next.json
-function sendPage(i, events, nexts) {
+function sendPage(i, events) {
     const event = events[i];
-    const next = nexts[0];
     const content = document.createElement("li");
     content.innerHTML = `<p>${event.date}</p><p>successed</p>`;
-    next.html = content;
     console.log(event);
-    console.log(next.html);
 }
 
 // getID
-function getId(events, nexts) {
-    const page_true = document.getElementById("page_true");
+function getId(events) {
     const list_content = document.getElementsByClassName("list_content");
     for (let i = 0; i < list_content.length; i++) {
         list_content[i].addEventListener("click", function () {
             console.log(i);
-            sendPage(i, events, nexts);
-            setTimeout(jumpPage, 500);
+            setTimeout(jumpPage(i), 500);
         });
     };
 };
@@ -52,7 +44,6 @@ function getId(events, nexts) {
 async function loadEvents() {
     const lists = document.getElementById("list_wrapper");
     const events = await getEvents();
-    const nexts = await getNext();
     for (let i = 0; i < Object.keys(events).length; i++) {
         const event = events[i];
         makeList(event);
@@ -61,12 +52,12 @@ async function loadEvents() {
         }
     }
     console.log("get ready getIdevent");
-    lists.addEventListener("click", getId(events, nexts));
+    lists.addEventListener("click", getId(events));
 }
 
 
-function jumpPage() {
-    window.location.href = '../next.html';
+function jumpPage(i) {
+    window.location.href = `../page2.html?id=${i}`;
 }
 
 // upload by push button
@@ -97,4 +88,4 @@ async function listEvents() {
 }
 
 window.addEventListener("load", loadEvents);
-button.addEventListener("click", listEvents);
+// button.addEventListener("click", listEvents);
