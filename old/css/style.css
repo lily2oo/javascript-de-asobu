@@ -1,0 +1,60 @@
+#motal_wrapper {
+    background-color: #333;
+}
+
+.close {
+    display: none;
+}
+
+#info {
+    background: #FEF7ED;
+    padding: 10% 0;
+    text-align: center;
+}
+
+#info h2 {
+    display: inline-block;
+    padding: 0px 10px;
+    color: #0F70DB;
+    border-bottom: rgba(255, 205, 60, 0.5) 20px solid;
+    line-height: 0.2;
+}
+
+#list_wrapper {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0;
+    color: #555555;
+}
+
+.list_content {
+    background-color: #fff;
+    list-style: none;
+    text-align: left;
+    padding: 15px 30px;
+    margin: 30px 0;
+    border-radius: 10px;
+}
+
+.list_content .genre {
+    display: inline;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.list_content .genre_event {
+    background: #FF9234;
+}
+
+.list_content .genre_notice {
+    background: #555555;
+}
+
+.list_content .title {}
+
+.list_content .date {
+    margin: 0;
+    text-align: right;
+}

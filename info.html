@@ -5,9 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>おててさっか</title>
-    <meta name="description" content="おててさっかは、お子様が自分の手を動かして主人公を描き、シナリオを決めていく、創造体験型イベントです。" />
-    <link href="css/style.css" rel="stylesheet">
+    <title>私たちについて</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/favicon.ico">
     <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-precomposed.jpg">
     <script>
@@ -31,14 +30,10 @@
         })(document);
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
 </head>
 
 <body>
     <div id="wrapper">
-        <div id="reserve">
-            <a href="https://reserva.be/otetesakka"><img src="/img/reserve.png" alt=""></a>
-        </div>
         <header>
             <div class="fixHeader">
                 <a href="/index.html"><img src="/img/logo_yoko.png" alt=""></a>
@@ -63,11 +58,11 @@
                                 <p>おててさっかについて</p>
                                 <div class="polygon"></div>
                             </a></li>
-                        <li> <a class="inner" href="#howToPlay">
+                        <li> <a class="inner" href="/index.html#howToPlay">
                                 <p>おててさっかの遊び方</p>
                                 <div class="polygon"></div>
                             </a></li>
-                        <li><a class="inner" href="info.html">
+                        <li><a class="inner" href="/info.html">
                                 <p>最新情報</p>
                                 <div class="polygon"></div>
                             </a></li>
@@ -84,66 +79,17 @@
             </nav>
         </header>
 
-        <section id="top">
-            <h1><span>遊びながら創りあげる</span><br><span>君だけの物語</span></h1>
-        </section>
+        <section class="bg-white">
+            <section id="info" class="info_top">
+                <h2>最新情報</h2>
+                <ul id="list_wrapper"></ul>
+                <!-- <button id="addBtn">MOREだよー</button> -->
+                <!-- <div id="addBtn" class="newest">
+                    <p>もっと見る</p>
+                    <div id="polygon_white2" class="polygon_white"></div>
+                </div> -->
+            </section>
 
-        <section id="info">
-            <h2>最新情報</h2>
-            <ul id="list_wrapper"></ul>
-            <!-- <div id="addBtn">
-                <p>もっと見る</p>
-                <div id="polygon_white2" class="polygon_white"></div>
-            </div> -->
-        </section>
-
-        <section class="bg_white">
-            <div class="line">
-                <img src="/img/line.png" alt="">
-            </div>
-            <div id="howToPlay">
-                <div class="column">
-                    <img class="logo_yoko" src="/img/logo_yoko.png" alt="">
-                    <h2>のあそびかた</h2>
-                </div>
-                <div class="column">
-                    <div class="column_box">
-                        <img src="/img/howtoplay/scenesketch/SceneSketch_1.png" alt="">
-                        <p>物語の主人公を描く</p>
-                        <img class="dot" src="/img/howtoplay/dashedline1.png" alt="">
-                    </div>
-                    <div class="column_box">
-                        <p>描いた絵が動き出す！</p>
-                        <img src="/img/howtoplay/scenesketch/SceneSketch_2.png" alt="">
-                        <img class="dot" src="/img/howtoplay/dashedline2.png" alt="">
-                    </div>
-                    <div class="column_box">
-                        <img src="/img/howtoplay/scenesketch/SceneSketch_3_1.png" alt="">
-                        <p>ブロックを使って<br>物語の展開を決める</p>
-                        <img class="dot" src="/img/howtoplay/dashedline1.png" alt="">
-                    </div>
-                    <div class="column_box">
-                        <p>クレヨンで物語を<br>自分の好きな色に</p>
-                        <img src="/img/howtoplay/scenesketch/SceneSketch_3_2.png" alt="">
-                        <img class="dot" src="/img/howtoplay/dashedline2.png" alt="">
-                    </div>
-                    <div class="column_box">
-                        <img src="/img/howtoplay/scenesketch/SceneSketch_4.png" alt="">
-                        <p>世界にひとつだけの<br>君が創った絵本がもらえる！</p>
-                    </div>
-                </div>
-                <div class="column">
-                    <h3>遊び方紹介ビデオ</h3>
-                    <iframe class="youtube" src="https://www.youtube.com/embed/cxfq8JBsBYc" title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                    <div class="newest">
-                        <a href="info.html">最新イベント情報はこちら</a>
-                        <div class="polygon_white"></div>
-                    </div>
-                </div>
-            </div>
             <div class="line">
                 <img src="/img/line.png" alt="">
             </div>
@@ -207,6 +153,7 @@
             Copyright 2022 おててさっか<br>All right reserved
             <img src="/img/line.png" alt="">
         </footer>
+    </div>
     </div>
     <script src="js/main.js"></script>
     <script src="js/list.js"></script>

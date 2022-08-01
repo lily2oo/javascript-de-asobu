@@ -1,0 +1,49 @@
+[
+    {
+        "id":3,
+        "genre":"イベント情報",
+        "title":"8月にマルイ北千住にて開催します!",
+        "date":"2022/7/5更新",
+        "text":[
+            "イベント開催が決定しました！",
+            "[イベント概要]<br><span class='flex'>日時<span class='dot'>…</span><span class='text_box'>2022年8月18日(木)〜21日(日)<br>18日(12:00〜20:00)<br>19〜21日(10:00〜20:00)</span></span>",
+            "場所<span class='dot'>…</span>マルイ北千住4階イベントスペース<br>&nbsp;&nbsp;&nbsp;<a class='link' href='https://life-is-tech.com/'>マルイ北千住公式ホームページはこちら<img class='link_img' src='img/link.png'></a>",
+            "参加料<span class='dot'>…</span>1回1200円(税込)",
+            "<span class='flex'>オプション<span class='dot'>…</span><span class='text_box'>チェキ入さっかページ追加<br>300円(税込)</span></span>",
+            "絵本の最後に、お子様の写真(チェキ)が入った<br>さっかのページをお作りいたします♪！",
+            "<img src='img/SceneSketch_1.png'>"
+        ]
+    },
+    {
+        "id":2,
+        "genre":"お知らせ",
+        "title":"オーディエンス賞を受賞しました",
+        "date":"2022/3/15更新",
+        "text":[
+            "オーディエンス賞を受賞しました",
+            "[イベント概要]<br>日時<span class='dot'>…</span><span class='text_box'>2022年8月18日（木）〜21日（日）<br>18日(12:00〜20:00)<br>19〜21日(10:00〜20:00)</span>",
+            "場所<span class='dot'>…</span>マルイ北千住4階イベントスペース<br>",
+            "参加料<span class='dot'>…</span>1回1200円(税込)",
+            "オプション<span class='dot'>…</span><span class='text_box'>チェキ入さっかページ追加<br>300円(税込)</span>",
+            "絵本の最後に、お子様の写真(チェキ)が入った<br>さっかのページをお作りいたします♪！",
+            "<a href='https://life-is-tech.com/'>マルイ北千住公式ホームページはこちら</a>",
+            "<img src='img/SceneSketch_2.png'>"
+        ]
+    },
+    {
+        "id":1,
+        "genre":"イベント情報",
+        "title":"2月25〜28日にマルイファミリー溝口で開催しました！",
+        "date":"2022/2/10更新",
+        "text":[
+            "2月25〜28日にマルイファミリー溝口で開催しました！",
+            "[イベント概要]<br>日時<span class='dot'>…</span><span class='text_box'>2022年8月18日（木）〜21日（日）<br>18日(12:00〜20:00)<br>19〜21日(10:00〜20:00)</span>",
+            "場所<span class='dot'>…</span>マルイ北千住4階イベントスペース<br>",
+            "参加料<span class='dot'>…</span>1回1200円(税込)",
+            "オプション<span class='dot'>…</span><span class='text_box'>チェキ入さっかページ追加<br>300円(税込)</span>",
+            "絵本の最後に、お子様の写真(チェキ)が入った<br>さっかのページをお作りいたします♪！",
+            "<a href='https://life-is-tech.com/'>マルイ北千住公式ホームページはこちら</a>",
+            "<img src='img/SceneSketch_3.png'>"
+        ]
+    }
+]

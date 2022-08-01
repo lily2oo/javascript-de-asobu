@@ -6,21 +6,157 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/page2.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-precomposed.jpg">
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'qnn2pbk',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'zjn3bua',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
 </head>
 
 <body>
     <div id="wrapper">
-        <img class="bar" src="img/line.png">
-        <section id="main_container">
-            <div id="base_info">
-                <p id="date"></p>
-                <p id="genre"></p>
+        <header>
+            <div class="fixHeader">
+                <a href="/index.html"><img src="/img/logo_yoko.png" alt=""></a>
+                <div class="menu button">
+                    <div class="line_menu_box">
+                        <div class="line_menu"></div>
+                        <div class="line_menu"></div>
+                        <div class="line_menu"></div>
+                    </div>
+                    <p>menu</p>
+                </div>
             </div>
-            <h2 id="title"></h2>
-            <div id="main_content">
+
+            <nav class="bg_white">
+                <div id="nav" class="menu_container">
+                    <ul>
+                        <li><a class="inner" href="/index.html">
+                                <p>トップページ</p>
+                                <div class="polygon"></div>
+                            </a></li>
+                        <li><a class="inner" href="/niTsuITe.html">
+                                <p>おててさっかについて</p>
+                                <div class="polygon"></div>
+                            </a></li>
+                        <li> <a class="inner" href="/index.html#howToPlay">
+                                <p>おててさっかの遊び方</p>
+                                <div class="polygon"></div>
+                            </a></li>
+                        <li><a class="inner" href="/index.html/#info">
+                                <p>最新情報</p>
+                                <div class="polygon"></div>
+                            </a></li>
+                        <li> <a class="inner" href="/waTaShiTaChi.html">
+                                <p>私たちについて</p>
+                                <div class="polygon"></div>
+                            </a></li>
+                        <li> <a class="inner" id="border_bottom" href="/oToIAWaSe.html">
+                                <p>お問い合わせ</p>
+                                <div class="polygon"></div>
+                            </a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+
+        <section id="main_container">
+            <img class="lineTop" src="/img/line.png" alt="">
+            <div class="info_main">
+                <div id="base_info">
+                    <p id="date"></p>
+                    <p id="genre"></p>
+                </div>
+                <h2 id="title"></h2>
+                <div id="main_content">
+                </div>
+            </div>
+            <div class="newest" id="back">
+                <div class="polygon_white"></div>
+                <a href="info.html">一覧に戻る
+                </a>
+            </div>
+            <div class="line">
+                <img src="/img/line.png" alt="">
             </div>
         </section>
+
+        <!-- 以下共通項目 -->
+        <section class="bg_orange">
+            <div id="followUs">
+                <div class="item">
+                    <h4>Follow Us</h4>
+                    <a href="https://lin.ee/mmPBfMH"><img src="/img/sns_logo/line_logo.png" alt=""></a>
+                    <a href="https://youtu.be/jKoVrp1CBh0"> <img src="/img/sns_logo/youtube_logo.png" alt=""></a>
+                    <a href="https://www.instagram.com/otetesakka/" target="/
+               _blank"> <img src="/img/sns_logo/instagram_logo.png" alt=""> </a>
+                </div>
+                <div class="flame_polygon"></div>
+                <p><span>最新情報をいち早く受け取れます</span></p>
+            </div>
+            <div class="line">
+                <img src="/img/line.png" alt="">
+            </div>
+        </section>
+
+        <section class="bg_white">
+            <div class="menu_container">
+                <a class="inner" href="/index.html">
+                    <p>トップページ</p>
+                    <div class="polygon"></div>
+                </a>
+                <a class="inner" href="/niTsuITe.html">
+                    <p>おててさっかについて</p>
+                    <div class="polygon"></div>
+                </a>
+                <a class="inner" href="/index.html#howToPlay">
+                    <p>おててさっかの遊び方</p>
+                    <div class="polygon"></div>
+                </a><a class="inner" href="/info.html">
+                    <p>最新情報</p>
+                    <div class="polygon"></div>
+                </a>
+                <a class="inner" href="/waTaShiTaChi.html">
+                    <p>私たちについて</p>
+                    <div class="polygon"></div>
+                </a>
+                <a class="inner" id="border_bottom" href="/oToIAWaSe.html">
+                    <p>お問い合わせ</p>
+                    <div class="polygon"></div>
+                </a>
+            </div>
+        </section>
+
+        <section class="bg_orange">
+            <div id="pagetop">
+                <a href="#">Page TOP</a>
+                <div class="polygon_B"></div>
+            </div>
+        </section>
+        <footer class="section A">
+            Copyright 2022 おててさっか<br>All right reserved
+            <img src="/img/line.png" alt="">
+        </footer>
     </div>
     <script src="js/page2.js"></script>
 </body>
