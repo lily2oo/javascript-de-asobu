@@ -36,7 +36,6 @@ html {
     left: 10px;
 }
 
-
 header{
     width: 100%;
 }
@@ -178,7 +177,7 @@ section {
 }
 
 .info_top{
-    margin: 100px 0 0;
+    margin: 60px 0 0;
 }
 
 #info h2 {
@@ -360,10 +359,12 @@ h3 {
 }
 
 #aboutOtetesakka_title img {
-    width: 250px;
+    width: 50vw;
+    min-width: 200px;
+    max-width: 250px;
     position: absolute;
     top: auto;
-    left: 20%;
+    left: 15%;
 }
 
 #aboutOtetesakka_title h2 {
@@ -475,7 +476,7 @@ line-height: 3em;
 
 .lineTop {
     width: 100%;
-    margin: 60px 0 30px;
+    margin: 30px 0 20px;
 }
 
 #us_container h2 {
@@ -512,6 +513,12 @@ line-height: 3em;
     margin: 40px auto;
 }
 
+#us h3{
+    font-size: 2rem;
+    margin: 20px 0 10px;
+    /* color: #555; */
+}
+
 #us img {
     width: 50%;
 }
@@ -521,12 +528,6 @@ line-height: 3em;
     line-height: 1.8em;
     margin: 10px 0 0;
 }
-
-
-
-
-
-
 
 
 /* 以下お問い合わせ */
@@ -596,7 +597,6 @@ line-height: 3em;
 }
 
 #followUs {
-    /* height: 26vh; */
     padding: 60px 0;
     display: flex;
     flex-direction: column;
