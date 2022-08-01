@@ -1,215 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="js">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>おててさっか</title>
-    <meta name="description" content="おててさっかは、お子様が自分の手を動かして主人公を描き、シナリオを決めていく、創造体験型イベントです。" />
-    <link href="css/style.css" rel="stylesheet">
-    <link rel="shortcut icon" href="img/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-precomposed.jpg">
-    <script>
-        (function (d) {
-            var config = {
-                kitId: 'qnn2pbk',
-                scriptTimeout: 3000,
-                async: true
-            },
-                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
-        })(document);
-    </script>
-    <script>
-        (function (d) {
-            var config = {
-                kitId: 'zjn3bua',
-                scriptTimeout: 3000,
-                async: true
-            },
-                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
-        })(document);
-    </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div id="wrapper">
-        <div id="reserve">
-            <a href="https://reserva.be/otetesakka"><img src="/img/reserve.png" alt=""></a>
-        </div>
-        <header>
-            <div class="fixHeader">
-                <a href="/index.html"><img src="/img/logo_yoko.png" alt=""></a>
-                <div class="menu button">
-                    <div class="line_menu_box">
-                        <div class="line_menu"></div>
-                        <div class="line_menu"></div>
-                        <div class="line_menu"></div>
-                    </div>
-                    <p>menu</p>
-                </div>
-            </div>
-
-            <nav class="bg_white">
-                <div id="nav" class="menu_container">
-                    <ul>
-                        <li><a class="inner" href="/index.html">
-                                <p>トップページ</p>
-                                <div class="polygon"></div>
-                            </a></li>
-                        <li><a class="inner" href="/niTsuITe.html">
-                                <p>おててさっかについて</p>
-                                <div class="polygon"></div>
-                            </a></li>
-                        <li> <a class="inner" href="#howToPlay">
-                                <p>おててさっかの遊び方</p>
-                                <div class="polygon"></div>
-                            </a></li>
-                        <li><a class="inner" href="info.html">
-                                <p>最新情報</p>
-                                <div class="polygon"></div>
-                            </a></li>
-                        <li> <a class="inner" href="/waTaShiTaChi.html">
-                                <p>私たちについて</p>
-                                <div class="polygon"></div>
-                            </a></li>
-                        <li> <a class="inner" id="border_bottom" href="/oToIAWaSe.html">
-                                <p>お問い合わせ</p>
-                                <div class="polygon"></div>
-                            </a></li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-
-        <section id="top">
-            <h1><span>遊びながら創りあげる</span><br><span>君だけの物語</span></h1>
-        </section>
-
-        <section id="info">
-            <h2>最新情報</h2>
-            <ul id="list_wrapper"></ul>
-            <!-- <div id="addBtn">
-                <p>もっと見る</p>
-                <div id="polygon_white2" class="polygon_white"></div>
-            </div> -->
-        </section>
-
-        <section class="bg_white">
-            <div class="line">
-                <img src="/img/line.png" alt="">
-            </div>
-            <div id="howToPlay">
-                <div class="column">
-                    <img class="logo_yoko" src="/img/logo_yoko.png" alt="">
-                    <h2>のあそびかた</h2>
-                </div>
-                <div class="column">
-                    <div class="column_box">
-                        <img src="/img/howtoplay/scenesketch/SceneSketch_1.png" alt="">
-                        <p>物語の主人公を描く</p>
-                        <img class="dot" src="/img/howtoplay/dashedline1.png" alt="">
-                    </div>
-                    <div class="column_box">
-                        <p>描いた絵が動き出す！</p>
-                        <img src="/img/howtoplay/scenesketch/SceneSketch_2.png" alt="">
-                        <img class="dot" src="/img/howtoplay/dashedline2.png" alt="">
-                    </div>
-                    <div class="column_box">
-                        <img src="/img/howtoplay/scenesketch/SceneSketch_3_1.png" alt="">
-                        <p>ブロックを使って<br>物語の展開を決める</p>
-                        <img class="dot" src="/img/howtoplay/dashedline1.png" alt="">
-                    </div>
-                    <div class="column_box">
-                        <p>クレヨンで物語を<br>自分の好きな色に</p>
-                        <img src="/img/howtoplay/scenesketch/SceneSketch_3_2.png" alt="">
-                        <img class="dot" src="/img/howtoplay/dashedline2.png" alt="">
-                    </div>
-                    <div class="column_box">
-                        <img src="/img/howtoplay/scenesketch/SceneSketch_4.png" alt="">
-                        <p>世界にひとつだけの<br>君が創った絵本がもらえる！</p>
-                    </div>
-                </div>
-                <div class="column">
-                    <h3>遊び方紹介ビデオ</h3>
-                    <iframe class="youtube" src="https://www.youtube.com/embed/cxfq8JBsBYc" title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                    <div class="newest">
-                        <a href="info.html">最新イベント情報はこちら</a>
-                        <div class="polygon_white"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="line">
-                <img src="/img/line.png" alt="">
-            </div>
-        </section>
-
-
-
-        <!-- 以下共通項目 -->
-        <section class="bg_orange">
-            <div id="followUs">
-                <div class="item">
-                    <h4>Follow Us</h4>
-                    <a href="https://lin.ee/mmPBfMH"><img src="/img/sns_logo/line_logo.png" alt=""></a>
-                    <a href="https://youtu.be/jKoVrp1CBh0"> <img src="/img/sns_logo/youtube_logo.png" alt=""></a>
-                    <a href="https://www.instagram.com/otetesakka/" target="/
-                   _blank"> <img src="/img/sns_logo/instagram_logo.png" alt=""> </a>
-                </div>
-                <div class="flame_polygon"></div>
-                <p><span>最新情報をいち早く受け取れます</span></p>
-            </div>
-            <div class="line">
-                <img src="/img/line.png" alt="">
-            </div>
-        </section>
-
-        <section class="bg_white">
-            <div class="menu_container">
-                <a class="inner" href="/index.html">
-                    <p>トップページ</p>
-                    <div class="polygon"></div>
-                </a>
-                <a class="inner" href="/niTsuITe.html">
-                    <p>おててさっかについて</p>
-                    <div class="polygon"></div>
-                </a>
-                <a class="inner" href="/index.html#howToPlay">
-                    <p>おててさっかの遊び方</p>
-                    <div class="polygon"></div>
-                </a><a class="inner" href="/info.html">
-                    <p>最新情報</p>
-                    <div class="polygon"></div>
-                </a>
-                <a class="inner" href="/waTaShiTaChi.html">
-                    <p>私たちについて</p>
-                    <div class="polygon"></div>
-                </a>
-                <a class="inner" id="border_bottom" href="/oToIAWaSe.html">
-                    <p>お問い合わせ</p>
-                    <div class="polygon"></div>
-                </a>
-            </div>
-        </section>
-
-        <section class="bg_orange">
-            <div id="pagetop">
-                <a href="#">Page TOP</a>
-                <div class="polygon_B"></div>
-            </div>
-        </section>
-        <footer class="section A">
-            Copyright 2022 おててさっか<br>All right reserved
-            <img src="/img/line.png" alt="">
-        </footer>
-    </div>
-    <script src="js/main.js"></script>
-    <script src="js/list.js"></script>
+    <section id="info">
+        <h2>最新情報</h2>
+        <ul id="list_wrapper"></ul>
+        <!-- <button id="addBtn">MOREだよ-
+    </button> -->
+    </section>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
